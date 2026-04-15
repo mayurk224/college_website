@@ -1,0 +1,194 @@
+:root {
+    --color-9a442b: #9a442b;
+    --color-be8770: #be8770;
+    --color-4a84ca: #4a84ca;
+    --color-6cd5bf: #6cd5bf;
+    --color-375c56: #375c56;
+    --color-c35308: #c35308;
+    --color-817b2e: #817b2e;
+    --color-41322c: #41322c;
+    --color-a4cecd: #a4cecd;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    font: medium;
+    text-decoration: none;
+    color: black;
+}
+
+.linksContainer {
+    display: flex;
+    gap: 2rem;
+}
+
+.navLinks {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.navLinks a:hover {
+    background: white;
+    color: var(--color-375c56);
+}
+
+.admissionbtn {
+    background: var(--color-375c56);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.home {
+    display: flex;
+    gap: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    height: 80vh;
+}
+
+.left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.badge {
+    border-radius: 50px;
+    border: 1px solid var(--color-375c56);
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.activeGlow {
+    width: 0.5rem;
+    height: 0.5rem;
+    background: var(--color-375c56);
+    border-radius: 50%;
+    animation: glow 1.5s infinite;
+
+}
+
+.badge p {
+    margin: 0;
+    color: var(--color-375c56);
+    font-size: 0.8rem;
+    position: relative;
+}
+
+.content h1 {
+    font-size: 3.5rem;
+}
+
+.content h1 span {
+    color: var(--color-375c56);
+    font-family: serif;
+    font-style: italic;
+}
+
+.actionBtn {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.actionBtn button {
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.applyBtn {
+    background: var(--color-375c56);
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: none;
+}
+
+.learnBtn {
+    color: var(--color-375c56);
+    border: 1px solid var(--color-375c56);
+}
+
+.footer {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stats {
+    text-align: center;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.banner img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.banner div{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.banner div span{
+    color: var(--color-375c56);
+}
+
+.right{
+    width: 60%;
+}
+
+.mainImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
