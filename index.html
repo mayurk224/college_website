@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <nav>
+        <nav id="mainNav">
             <div class="logoContainer">
                 <a href="" class="logo">
                     <svg xmlns="http://www.w3.org/2000/svg" width="37" height="41" viewBox="0 0 37 41" fill="none"
@@ -26,6 +26,11 @@
                     <h3>The University <br>of Washington</h3>
                 </a>
             </div>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
             <div class="linksContainer">
                 <div class="navLinks">
                     <a href="/">Home</a>
@@ -205,5 +210,31 @@
             </div>
     </footer>
 </body>
+
+<script>
+    const nav = document.getElementById('mainNav');
+    const btn = document.getElementById('hamburgerBtn');
+
+    btn.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        btn.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Close menu when a nav link is clicked (useful on single-page or hash navigation)
+    nav.querySelectorAll('.navLinks a').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('nav-open');
+            btn.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!nav.contains(e.target)) {
+            nav.classList.remove('nav-open');
+            btn.setAttribute('aria-expanded', 'false');
+        }
+    });
+</script>
 
 </html>
