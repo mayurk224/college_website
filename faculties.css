@@ -18,6 +18,11 @@ body {
 
 header {
     width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
 }
 
 nav {
@@ -25,20 +30,22 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    position: relative;
 }
 
 .logo {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    width: 100%;
     font: medium;
     text-decoration: none;
     color: black;
+    white-space: nowrap;
 }
 
 .linksContainer {
     display: flex;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -69,6 +76,11 @@ nav {
     padding: 0.5rem 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.admissionbtn:hover {
+    background: #2f4e47;
 }
 
 footer {
@@ -410,6 +422,29 @@ footer a {
 
     .faculty-achievements ul {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 720px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .linksContainer {
+        flex-direction: column;
+        width: 100%;
+        gap: 1.5rem;
+    }
+
+    .navLinks {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .admissionbtn {
+        width: 100%;
     }
 }
 
