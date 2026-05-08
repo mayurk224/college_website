@@ -150,13 +150,11 @@ footer a {
     cursor: pointer;
 }
 
-/* ── Main Sections ─────────────────────────────────────────── */
 
 main {
     padding: 0;
 }
 
-/* Contact Header / Hero */
 .contact-header {
     background: linear-gradient(135deg, var(--color-375c56) 0%, var(--color-4a84ca) 100%);
     color: white;
@@ -176,7 +174,6 @@ main {
     margin: 0;
 }
 
-/* Contact Main – two-column layout */
 .contact-main {
     display: grid;
     grid-template-columns: 1fr 1.6fr;
@@ -188,7 +185,6 @@ main {
     box-shadow: 0 8px 40px rgba(55, 92, 86, 0.15);
 }
 
-/* Info Panel */
 .contact-info {
     background: var(--color-375c56);
     color: white;
@@ -224,7 +220,6 @@ main {
     line-height: 1.5;
 }
 
-/* Contact Form Panel */
 .contact-form {
     background: white;
     padding: 48px 40px;
@@ -291,7 +286,6 @@ form {
     transform: translateY(-2px);
 }
 
-/* Map Section */
 .contact-map {
     max-width: 1200px;
     margin: 0 auto 60px;
@@ -314,7 +308,6 @@ form {
     display: block;
 }
 
-/* FAQ Section */
 .contact-faq {
     background: var(--color-a4cecd);
     padding: 60px 40px;
@@ -356,7 +349,6 @@ form {
     font-size: 0.95rem;
 }
 
-/* ── Responsive ────────────────────────────────────────────── */
 
 @media (max-width: 900px) {
     .contact-main {
